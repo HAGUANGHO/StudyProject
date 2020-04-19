@@ -2,6 +2,8 @@ package com.project.study.web.dto;
 
 import org.junit.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class HelloResponseDTOTest {
 
     @Test
@@ -11,7 +13,8 @@ public class HelloResponseDTOTest {
 
         HelloResponseDTO helloResponseDTO = new HelloResponseDTO(name, amount);
 
-        assertThat(helloResponseDTO.getName()).isE
+        assertThat(helloResponseDTO.getName()).isEqualTo("테스트");
+        assertThat(helloResponseDTO.getAmount()).isEqualTo(10000);
     }
 
 }
