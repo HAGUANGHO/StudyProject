@@ -2,7 +2,6 @@ package com.project.study.web;
 
 import com.project.study.web.dto.HelloResponseDTO;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,4 +17,5 @@ public class HelloController {
     public HelloResponseDTO helloDTO(@RequestParam("name") String name, @RequestParam("amount") int amount) {
         return new HelloResponseDTO(name, amount);
     }
+
 }
